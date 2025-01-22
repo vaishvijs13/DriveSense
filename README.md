@@ -1,11 +1,17 @@
 # Hack the North 2023 Winner: Drive Sense
 
 ## Inspiration:
-Our inspiration for this app comes from the critical need to improve road safety and assess driver competence, especially under various road conditions. The alarming statistics on road accidents and fatalities, including those caused by distracted driving and poor road conditions, highlight the urgency of addressing this issue. We were inspired to create a solution that leverages technology to enhance driver competence and reduce accidents.
+Our inspiration for this app comes from the critical need to improve road safety and assess driver performance in a world where distracted driving and hazardous road conditions claim thousands of lives every year. The alarming statistics on road accidents and fatalities, including those caused by distracted driving and poor road conditions, highlight the urgency of addressing this issue. We were inspired to build a solution that leverages technology to enhance driver competence and reduce accidents.
 
 ## What it does
-Our app has a frontend, which connects to a GPS signal, which tracks the acceleration of a given car, as well as its speed. Such a React frontend also encompasses a Map, as well as a record feature, which, through the implementation of a LLM by Cohere, is capable of detecting alerting police, in the event of any speech that may be violent, or hateful, given road conditions. On the backend, we have numerous algorithms and computer vision, that were fine-tuned upon YOLOv5 and YOLOv8. These models take in an image through a camera feed, surrounding cars, the color of the surrounding traffic lights, and the size of the car plates in front of the drivers. By detecting car plates, we are able to infer the acceleration of a car (based on the change in size of the car plates), and are able to asses the driver's habits. By checking for red lights, correlated with the GPS data, we are able to determine a driver's reaction time, and can give a rating for a driver's capacities. Finally, an eye-tracking model is able to determine a driver's concentration, and focus on the road. All this paired with its interactive mobile app makes our app the ultimate replacement for any classic dashcam, and protects the driver from the road's hazards.
+Our app features a React-based frontend that connects to GPS signals, tracking a vehicle's acceleration and speed in real time. The frontend also includes an interactive map and a recording feature powered by Cohere's LLM, capable of detecting and alerting authorities in cases of violent or hateful speech related to road conditions.
+On the backend, we use advanced algorithms and fine-tuned computer vision models based on YOLOv5 and YOLOv8. These models process camera feeds to analyze surrounding vehicles, detect traffic light colors, and measure the size of car plates ahead. By tracking car plates, we infer a vehicle's acceleration based on changes in their size, providing valuable insights into driver habits. By analyzing traffic light data and correlating it with GPS signals, the app evaluates reaction times and generates a comprehensive rating of the driver’s capabilities.
+Additionally, an integrated eye-tracking model monitors the driver's focus and concentration on the road. Together with its interactive mobile app, our solution redefines traditional dashcams by offering advanced hazard detection and driver assessment, ensuring safety and protection against road hazards.
 
-https://www.youtube.com/watch?v=G3tUnQWzXzw
+Demo at Hack the North Closing Ceremonies: https://www.youtube.com/live/7sVzflHqHAo?t=1941s
 
-https://devpost.com/software/drive-sense
+Official Video: https://www.youtube.com/watch?v=G3tUnQWzXzw
+
+Devpost: https://devpost.com/software/drive-sense
+
+<img width="1009" alt="image" src="https://github.com/user-attachments/assets/14b2c86f-1c78-448c-ba03-a80da93555c9" />
